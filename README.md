@@ -1,70 +1,90 @@
-# Ishmael's EEG/ECG Viewer
+# QUASAR EEG/ECG Data Viewer
 
-**Built for QUASAR's Coding Screener to visualize EEG and ECG data interactively in a single GUI.**  
-This application allows you to load raw EEG/ECG CSV files and explore multiple channels in one window with scrollable, zoomable, and pannable plots.
+**An interactive GUI application for visualizing EEG and ECG signals from CSV files.**
 
----
-
-## Features
-
-- 📂 Load EEG/ECG CSV files directly from the GUI.  
-- 📊 Display multiple channels simultaneously using interactive Plotly plots.  
-- 🔄 Scroll, zoom, and pan through time-series signals.  
-- ✅ Select which EEG, ECG, or reference channels to display.  
-- ⚡ Normalize EEG signals for easier comparison.  
-- 💾 Export the current plot as an HTML file.  
-- ℹ️ Info panel displaying metadata, sampling rate, duration, and channel ranges.  
+This tool loads raw EEG/ECG data and displays multiple channels in organized, interactive plots with comprehensive filtering and export options.
 
 ---
 
-## How I Created It
+## Key Features
 
-I built the GUI using **Tkinter** and embedded **Plotly** charts for interactive plotting. Here’s my approach:
-
-1. **CSV Parsing**  
-   - Ignored lines starting with `#` as metadata.  
-   - Loaded the rest into a Pandas DataFrame, using the first non-comment row as headers.  
-
-2. **Channel Handling**  
-   - Categorized channels into EEG, ECG, and Reference (CM).  
-   - Ignored irrelevant columns (e.g., Trigger, ADC_Status).  
-
-3. **Scaling Decisions**  
-   - EEG signals (μV) are small and plotted normally.  
-   - ECG signals (X1:LEOG, X2:REOG) are converted to mV for readability.  
-   - Reference signals (CM) are large and plotted separately to avoid scale overlap.  
-
-4. **Interactive Plot**  
-   - Used Plotly to allow scroll, zoom, and pan.  
-   - Added a range slider for easier navigation.  
-   - Hover templates display channel, time, and amplitude.  
-
-5. **GUI Layout**  
-   - Designed a single-window layout with file selector, options panel, info panel, and plot embedded together.  
+- **📂 Smart File Loading** – Automatically handles CSV files with metadata lines (ignores `#` comments)
+- **📊 Multi-Channel Display** – View EEG, ECG, and reference channels in separate organized subplots
+- **🎛️ Advanced Controls**
+  - Select specific channels to plot using multi-selection interface
+  - Choose unit display: native (EEG in μV, ECG in mV) or all in μV
+  - Normalize EEG channels using z-score standardization
+  - Subtract reference (CM) signal from EEG channels before plotting
+  - Set custom time windows for focused analysis
+- **🔍 Interactive Navigation** – Pan, zoom, and scroll through signals with Plotly's range slider
+- **💾 Flexible Export** – Save plots as HTML (always) or PNG (if kaleido installed)
+- **ℹ️ Data Summary** – Real-time info panel showing sampling rate, duration, channel ranges, and metadata
 
 ---
 
-## AI Assistance
+## Technical Details
 
-I used AI to:
+### Channel Classification
+- **EEG Channels**: Fz, Cz, P3, C3, F3, F4, C4, P4, Fp1, Fp2, T3, T4, T5, T6, O1, O2, F7, F8, A1, A2, Pz
+- **ECG Channels**: X1:LEOG, X2:REOG
+- **Reference**: CM (Common Mode)
+- **Auto-Ignored**: Trigger, Time_Offset, ADC_Status, ADC_Sequence, Event, Comments, and X3: patterns
 
-- Help organize the **GUI layout** for clarity and usability.  
-- Configure **Plotly plots**, subplots, and hover behavior efficiently.  
-- Suggest **code structure** to keep it clean and maintainable.  
+### Plot Organization
+- EEG channels grouped in top subplot (stacked traces in μV)
+- ECG channels in separate subplot (converted to mV for readability)
+- CM reference plotted separately if selected
+- Shared x-axis with unified hover and range controls
+
+### Data Processing
+- Background file loading prevents GUI freezing
+- Robust CSV parsing handles various formats
+- Automatic numeric conversion with error handling
+- Time window filtering for focused analysis
 
 ---
 
-## How to Run
+## Installation & Usage
 
-### 1. Clone the repository
-``` bash
-git clone https://github.com/<your-github-username>/QUASAR-EEG-ECG-GUI-Viewer.git
-cd quasar-eeg-ecg-gui-viewer 
+### Requirements
+```bash
+pip install pandas plotly tkinter
 ```
 
-2. Install dependencies
-```bash
-pip install -r requirements.txt
+### Quick Start 
+``` bash 
+git clone <your-repository-url>
+cd quasar-eeg-ecg-viewer
+python quasar_viewer_enhanced.py
 ``` 
 
-3. Run in your preferred IDE!
+## Usage Guide
+
+1. **Load Data**  
+   Click "Browse..." and select your CSV file.
+
+2. **Select Channels**  
+   Use the channel list to choose which signals to display.
+
+3. **Configure Processing**  
+   - Set unit display preferences  
+   - Enable normalization or reference subtraction as needed  
+   - Define time window for focused analysis (optional)
+
+4. **Generate Visualization**  
+   Click "Generate Plot" to create the interactive plot.
+
+5. **Export Results**  
+   Save your plot as HTML or PNG using the "Export..." button.
+
+---
+
+## Architecture Notes
+
+Built with Python's **Tkinter** for the GUI framework and **Plotly** for interactive visualization. The application handles the different amplitude scales of EEG (microvolts) and ECG (millivolts) by organizing them into logical subplot groups.
+
+### Key Design Features
+- Threaded file I/O for responsive interface  
+- Automatic signal type detection and routing  
+- Flexible unit conversion system  
+- Graceful degradation when optional packages are unavailable  
