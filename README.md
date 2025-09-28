@@ -91,7 +91,17 @@ python quasar_eeg_ecg_viewer.py
 
 ---
 ## Sample Screenshots/GIFs
-![EEG/ECG GUI](https://drive.google.com/uc?export=view&id=1m6QccirEQwkngdGHgq7xb03vuuK1DZvf)
+**Figure 1:** EEG/ECG Program GUI 
+<img src="https://drive.google.com/uc?export=view&id=1m6QccirEQwkngdGHgq7xb03vuuK1DZvf" width="500" height="500"/>
+
+**Figure 2:** EEG/ECG Viewer Plot Example (Plotly)
+<img src="https://drive.google.com/file/d/1TRaog5S10eHIvHfNfyaHqXwr5-BSFN6a/view?usp=sharing" width="500" height="500"/>
+
+**Figure 3:** How to Use GUI (GIF)
+
+**Figure 4:** Plotly Zoom & Graph Analysis Features (GIF)
+
+
 
 ---
 ## Architecture Notes
