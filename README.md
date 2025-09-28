@@ -95,13 +95,12 @@ python quasar_viewer_enhanced.py
 
 Built with Python's **Tkinter** for the GUI framework and **Plotly** for interactive visualization. The application handles the different amplitude scales of EEG (microvolts) and ECG (millivolts) by organizing them into logical subplot groups.
 
----
-
-<sub>Built with ❤️ by Ishmael | For QUASAR EEG/ECG Data Viewer</sub>
-
-
 ### Key Design Features
 - Threaded file I/O for responsive interface  
 - Automatic signal type detection and routing  
 - Flexible unit conversion system  
 - Graceful degradation when optional packages are unavailable  
+
+---
+
+<sub>Built with ❤️ by Ishmael | For QUASAR's Coding Screener </sub>
