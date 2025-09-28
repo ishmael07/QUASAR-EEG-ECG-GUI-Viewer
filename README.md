@@ -51,7 +51,6 @@ During development of **Ishmael's EEG/ECG Viewer**, AI tools were used to stream
 - **GUI Layout Suggestions** – AI helped structure the Tkinter interface for a clear, user-friendly layout with organized frames, buttons, and control panels.
 - **Plotly Configuration** – AI provided guidance on setting up interactive subplots, handling multiple EEG/ECG channels, adding range sliders, and customizing hover templates.
 - **Code Optimization** – Recommendations from AI assisted in threading file I/O, improving responsiveness, and managing channel scaling for EEG (μV) vs ECG (mV).
-- **Documentation & README** – AI contributed to organizing instructions, usage guide, and technical notes in clear, concise language suitable for GitHub.
 
 This assistance ensured a more maintainable, usable, and professional application while preserving full control over the code logic and design decisions.
 
