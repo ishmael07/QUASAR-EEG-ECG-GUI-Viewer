@@ -121,6 +121,11 @@ Built with Python's **Tkinter** for the GUI framework and **Plotly** for interac
 - Flexible unit conversion system  
 - Graceful degradation when optional packages are unavailable  
 
+## Future Work
+- **Custom Layouts:** Allow users to drag and reorder channels or subplots within the GUI.  
+- **Advanced Analytics:** Add automated feature detection (e.g., R-peaks in ECG, event markers in EEG).  
+- **Improved Performance:** Optimize memory usage for large datasets and faster rendering.  
+
 ---
 
 <sub>Built with ❤️ by Ishmael | For QUASAR's Coding Screener </sub>
