@@ -91,6 +91,7 @@ python quasar_eeg_ecg_viewer.py
 
 ---
 ## Sample Screenshots/GIFs
+![Scroll/Zoom Demo](images/interactive_demo.gif)
 
 ---
 ## Architecture Notes
