@@ -90,18 +90,21 @@ python quasar_eeg_ecg_viewer.py
    Save your plot as HTML or PNG using the "Export..." button.
 
 ---
-## Sample Screenshots/GIFs
-**Figure 1:** EEG/ECG Program GUI 
-<img src="https://drive.google.com/uc?export=view&id=1m6QccirEQwkngdGHgq7xb03vuuK1DZvf" width="500" height="500"/>
+## 📸 Sample Screenshots & GIFs
 
-**Figure 2:** EEG/ECG Viewer Plot Example (Plotly)
-<img src="https://drive.google.com/uc?export=view&id=1TRaog5S10eHIvHfNfyaHqXwr5-BSFN6a" width="500" height="500"/>
+### Figure 1: EEG/ECG Program GUI
+<img src="https://drive.google.com/uc?export=view&id=1m6QccirEQwkngdGHgq7xb03vuuK1DZvf" width="500"/>
 
-**Figure 3:** How to Use GUI (GIF)
+### Figure 2: EEG/ECG Viewer Plot Example (Plotly)
+<img src="https://drive.google.com/uc?export=view&id=1TRaog5S10eHIvHfNfyaHqXwr5-BSFN6a" width="500"/>
 
-**Figure 4:** Plotly Zoom & Graph Analysis Features (GIF)
+### Figure 3: How to Use GUI (GIF)
+<!-- Replace below with actual GIF link -->
+<img src="images/gui_usage.gif" width="500"/>
 
-
+### Figure 4: Plotly Zoom & Graph Analysis Features (GIF)
+<!-- Replace below with actual GIF link -->
+<img src="images/plot_zoom.gif" width="500"/>
 
 ---
 ## Architecture Notes
