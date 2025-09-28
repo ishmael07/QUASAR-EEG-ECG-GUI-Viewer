@@ -67,7 +67,7 @@ pip install pandas plotly tkinter kaleido
 ``` bash 
 git clone https://github.com/<your-github-username>/QUASAR-EEG-ECG-GUI-Viewer.git
 cd quasar-eeg-ecg-gui-viewer
-python quasar_viewer_enhanced.py
+python quasar_eeg_ecg_viewer.py
 ``` 
 
 ## Usage Guide
