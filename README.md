@@ -90,7 +90,9 @@ python quasar_eeg_ecg_viewer.py
    Save your plot as HTML or PNG using the "Export..." button.
 
 ---
+## Sample Screenshots/GIFs
 
+---
 ## Architecture Notes
 
 Built with Python's **Tkinter** for the GUI framework and **Plotly** for interactive visualization. The application handles the different amplitude scales of EEG (microvolts) and ECG (millivolts) by organizing them into logical subplot groups.
