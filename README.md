@@ -60,7 +60,7 @@ This assistance ensured a more maintainable, usable, and professional applicatio
 
 ### Requirements
 ```bash
-pip install pandas plotly tkinter
+pip install pandas plotly tkinter kaleido
 ```
 
 ### Quick Start 
