@@ -99,8 +99,11 @@ python quasar_eeg_ecg_viewer.py
 <img src="https://drive.google.com/uc?export=view&id=1TRaog5S10eHIvHfNfyaHqXwr5-BSFN6a" width="500"/>
 
 ### Figure 3: How to Use GUI (GIF)
-<!-- Replace below with actual GIF link -->
-<img src="images/gui_usage.gif" width="500"/>
+<figure>
+  <img src="https://drive.google.com/uc?export=view&id=1uwFgSYTqWON2XorlOwB3O1tAtUTAhZc8" width="500" height="500"/>
+  <figcaption><b>Figure 3:</b> How to Use GUI (GIF)</figcaption>
+</figure>
+
 
 ### Figure 4: Plotly Zoom & Graph Analysis Features (GIF)
 <!-- Replace below with actual GIF link -->
