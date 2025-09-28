@@ -105,7 +105,6 @@ python quasar_eeg_ecg_viewer.py
 
 
 ### Figure 4: Plotly Zoom & Graph Analysis Features (GIF)
-<!-- Replace below with actual GIF link -->
 <figure>
   <img src="https://drive.google.com/uc?export=view&id=1DI9LHAwQvI2GyViQmHCedhpehMUiU8BS" width="500" height="500"/>
 </figure>
