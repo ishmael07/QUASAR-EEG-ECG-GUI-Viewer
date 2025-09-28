@@ -1,4 +1,4 @@
-# QUASAR EEG/ECG Data Viewer
+# Ishmael's QUASAR EEG/ECG Data Viewer
 
 **An interactive GUI application for visualizing EEG and ECG signals from CSV files.**
 
@@ -53,8 +53,8 @@ pip install pandas plotly tkinter
 
 ### Quick Start 
 ``` bash 
-git clone <your-repository-url>
-cd quasar-eeg-ecg-viewer
+git clone https://github.com/<your-github-username>/QUASAR-EEG-ECG-GUI-Viewer.git
+cd quasar-eeg-ecg-gui-viewer
 python quasar_viewer_enhanced.py
 ``` 
 
