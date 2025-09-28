@@ -58,8 +58,8 @@ I used AI to:
 
 ### 1. Clone the repository
 ``` bash
-git clone https://github.com/<your-username>/quasar-eeg-ecg-viewer.git
-cd quasar-eeg-ecg-viewer 
+git clone https://github.com/<your-github-username>/QUASAR-EEG-ECG-GUI-Viewer.git
+cd quasar-eeg-ecg-gui-viewer 
 ```
 
 2. Install dependencies
