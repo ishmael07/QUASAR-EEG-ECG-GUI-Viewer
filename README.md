@@ -44,6 +44,19 @@ This tool loads raw EEG/ECG data and displays multiple channels in organized, in
 
 ---
 
+## AI Assistance
+
+During development of **Ishmael's EEG/ECG Viewer**, AI tools were used to streamline design and implementation:
+
+- **GUI Layout Suggestions** – AI helped structure the Tkinter interface for a clear, user-friendly layout with organized frames, buttons, and control panels.
+- **Plotly Configuration** – AI provided guidance on setting up interactive subplots, handling multiple EEG/ECG channels, adding range sliders, and customizing hover templates.
+- **Code Optimization** – Recommendations from AI assisted in threading file I/O, improving responsiveness, and managing channel scaling for EEG (μV) vs ECG (mV).
+- **Documentation & README** – AI contributed to organizing instructions, usage guide, and technical notes in clear, concise language suitable for GitHub.
+
+This assistance ensured a more maintainable, usable, and professional application while preserving full control over the code logic and design decisions.
+
+---
+
 ## Installation & Usage
 
 ### Requirements
@@ -82,6 +95,11 @@ python quasar_viewer_enhanced.py
 ## Architecture Notes
 
 Built with Python's **Tkinter** for the GUI framework and **Plotly** for interactive visualization. The application handles the different amplitude scales of EEG (microvolts) and ECG (millivolts) by organizing them into logical subplot groups.
+
+---
+
+<sub>Built with ❤️ by Ishmael | For QUASAR EEG/ECG Data Viewer</sub>
+
 
 ### Key Design Features
 - Threaded file I/O for responsive interface  
